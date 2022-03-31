@@ -1,0 +1,29 @@
+version: 0.19.0
+name: kcd-chennai
+namespace: ""
+runtime: go
+registry: ""
+image: 
+imageDigest: ""
+build: git
+git:
+  url: https://github.com/Shashankft9/kcd-chennai.git
+  revision: master
+builder: ghcr.io/boson-project/go-function-builder:tip
+builders:
+  default: ghcr.io/boson-project/go-function-builder:tip
+buildpacks:
+- paketo-buildpacks/go-dist
+- ghcr.io/boson-project/go-function-buildpack:tip
+volumes: []
+buildEnvs: []
+envs: []
+annotations: {}
+options: {}
+labels: []
+healthEndpoints:
+  liveness: /health/liveness
+  readiness: /health/readiness
+created: 2022-03-31T11:38:54.588207206Z
+invocation:
+  format: http
