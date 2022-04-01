@@ -3,8 +3,8 @@ name: kcd-chennai
 namespace: ""
 runtime: go
 registry: ""
-image: 
-imageDigest: ""
+image: docker.io/shashankft/kcd-chennai:latest
+imageDigest: sha256:c8b0f1ad364313519f034addf8e0b4b94605552a135041b3f74a1404dd8f7bd8
 build: git
 git:
   url: https://github.com/Shashankft9/kcd-chennai.git
